@@ -1,0 +1,1 @@
+{"uuid":"b789feef-be76-4701-b1be-325c1f4009ca","name":"automationPractice","children":["e4207831-8382-4492-9d47-e3d778de4151"],"befores":[{"name":"addTestToReport","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1720507848271,"stop":1720507848274}],"afters":[],"start":1720507848268,"stop":1720507849430}

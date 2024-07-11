@@ -1,0 +1,45 @@
+Description,Steps,Expected result
+Test login page: verify successful login with valid credentials,"1. Enter valid username
+2. Enter valid password
+3. Click Login ","1. User should be able to successfully login
+2. User should goto products page"
+Test login page: verify failed login with invalid username,"1. Enter invalid username
+2. Enter valid password
+3. Click Login ","Error message (""Epic sadface: Username and password do not match any user in this service"") should be displayed "
+Test login page: verify failed login with invalid password,"1. Enter valid username
+2. Enter invalid password
+3. Click Login ","Error message (""Epic sadface: Username and password do not match any user in this service"") should be displayed "
+Test login page: verify failed login with empty username,"1. Enter valid password
+2. Click Login ","Error message (""Epic sadface: Username is required
+"") should be displayed "
+Test login page: verify failed login with empty password,"1. Enter username
+2. Click Login ","Error message (""Epic sadface: Password is required
+"") should be displayed "
+Test products page : verify add to cart button functionality,1. Click on add to cart button on any one product,"1. cart icon should have count 1
+2. add to cart button should be replaced with Remove button"
+Test products page : verify remove button functionality,1. Click on Remove button ,"1. cart icon should not have any count
+2. Remove button should be replaced with add to cart button"
+Test products page : verify filter functionality with default filter A to Z,,All products should be sorted in A to Z with respect to product name
+Test products page : verify filter functionality with Z to A filter,"1. Click on filter icon
+2. Select Z to A",All products should be sorted in Z to A with respect to product name
+Test products page : verify filter functionality with price low to high filter,"1. Click on filter icon
+2. Select price low to high",All products should be sorted from low price to high price
+Test products page : verify filter functionality with price high to low filter,"1. Click on filter icon
+2. Select price high to low",All products should be sorted from high price to low price
+Test products page : verify cart button,"1. Add any product to cart
+2. Click on cart button",User should go to cart page
+Test cart page : verify remove button functionality,1. Click on Remove button ,1. cart should be empty
+Test cart page : verify continue shooping button functionality,1. Click on Continue shopping button ,User should go to products page
+Test cart page : verify Checkout button functionality,"1. Add any product to cart
+2. Click on cart button
+3. Click on checkout button ",User should go to checkout user information page
+Test checkout user information page : verify successfull checkout,"1. Enter user information
+2. Click on continue",User should go to checkout overview page
+Test checkout user information page : verify failed checkout with empty first name,"1. Enter empty first name
+2. Click on continue","Error message (""Error: First Name is required"") should be displayed "
+Test checkout user information page : verify failed checkout with empty last name,"1. Enter empty last name
+2. Click on continue","Error message (""Error: Last Name is required"") should be displayed "
+Test checkout user information page : verify failed checkout with empty postal code,"1. Enter empty postal code
+2. Click on continue","Error message (""Error: Postal code is required"") should be displayed "
+Test Checkout overiew page : verify cancel button,1. Click on checkout button ,User should go to products page
+Test Checkout overiew page : verify Finish button,1. Click on finish button ,User should go to Checkout Complete page

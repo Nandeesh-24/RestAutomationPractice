@@ -1,0 +1,1 @@
+{"uuid":"ff5a137a-b918-4ecb-a55a-5482e3a34e78","name":"Test2","children":["495642ab-1b5d-479c-8f45-e831d0775c04"],"befores":[{"name":"addTestToReport","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1719890531305,"stop":1719890531305}],"afters":[],"start":1719890531304,"stop":1719890532135}
