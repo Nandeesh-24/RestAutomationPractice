@@ -33,6 +33,7 @@ public class MyServiceRequests {
                 prepareGet("https://reqres.in/api/users/delay="+delay+"&unique="+System.currentTimeMillis())
                 .execute();
         log.info(responseFuture.get().getResponseBody());
+        log.info("Done");
     }
 
     public void proxyGetRequest(){
