@@ -25,7 +25,7 @@ public class MyServiceRequests {
         log.info(response.getBody().asPrettyString());
         Assert.assertEquals(response.getStatusCode(),200);
         long responseTime = response.time();
-        System.out.println("Response Time: " + responseTime + " ms");
+        log.info("Response Time: " + responseTime + " ms");
     }
 
     public void asyncGet(int delay) throws ExecutionException, InterruptedException {
